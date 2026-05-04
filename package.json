@@ -10,6 +10,8 @@
   },
   "dependencies": {
     "@wix/bookings": "^1.0.1376",
+    "@wix/crm": "^1.0.1528",
+    "@wix/inbox": "^1.0.104",
     "@wix/sdk": "^1.21.7",
     "clsx": "^2.1.1",
     "framer-motion": "^12.38.0",

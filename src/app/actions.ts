@@ -17,15 +17,22 @@ export async function fetchWixServices() {
 
 export async function submitBookingRequest(data: any) {
   try {
-    console.log("=== NEW BOOKING INQUIRY RECEIVED ===");
-    console.log(data);
-    
-    // Simulate network latency for UX
-    await new Promise(resolve => setTimeout(resolve, 1000));
-    
-    // Note: To fully integrate with Wix Bookings, you would need to fetch available 
-    // time slots (sessions) first, as Wix requires a scheduleId to create a booking.
-    // For manual-approval inquiries, sending to Wix Inbox or using an email API like Resend is recommended.
+    const formattedMessage = `Requested Date: ${data.date}
+Phone: ${data.phone || 'Not provided'}
+
+Details:
+${data.details}`;
+
+    await wixClient.submissions.createSubmission({
+      formId: "7743cc3e-7a1f-4123-bf63-9ad61f37294f", // Contact Form ID from Wix Dashboard
+      namespace: "wix.form_app.form",
+      submissions: {
+        first_name: data.firstName,
+        last_name: data.lastName,
+        email: data.email,
+        message: formattedMessage
+      }
+    });
     
     return { success: true, message: "Inquiry received successfully." };
   } catch (error: any) {
