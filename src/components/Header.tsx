@@ -65,8 +65,8 @@ export function Header() {
               Our Story
             </Link>
             
-            <Link 
-              href="/wcan" 
+            <Link
+              href="/wcan"
               className={clsx(
                 "sm:hidden text-sm font-bold transition-colors",
                 isTransparent ? "text-white drop-shadow-md" : "text-[#2C4C3B] hover:text-[#E07A5F]"
@@ -75,8 +75,22 @@ export function Header() {
               WCAN
             </Link>
 
-            <Link 
-              href="/book-hall" 
+            <Link
+              href="/whats-on"
+              className={clsx(
+                "hidden sm:flex text-sm font-bold tracking-wide uppercase transition-all duration-200 border-b-2 pb-1",
+                pathname === "/whats-on"
+                  ? "text-[#E07A5F] border-[#E07A5F]"
+                  : isTransparent
+                    ? "text-white border-transparent hover:border-white/50 drop-shadow-md"
+                    : "text-[#2C4C3B] border-transparent hover:text-[#E07A5F] hover:border-[#E07A5F]/30"
+              )}
+            >
+              What&apos;s On
+            </Link>
+
+            <Link
+              href="/book-hall"
               className={clsx(
                 "px-5 py-2.5 sm:px-8 sm:py-3 rounded-full text-sm font-bold transition-all duration-200 shadow-md hover:shadow-lg hover:-translate-y-0.5",
                 pathname === "/book-hall"

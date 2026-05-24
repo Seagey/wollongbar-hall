@@ -116,6 +116,40 @@ export default function Home() {
         </div>
       </section>
 
+      {/* What's On Section */}
+      <section className="py-24 px-4 bg-white relative">
+        <div className="max-w-5xl mx-auto relative z-10">
+          <div className="text-center mb-12">
+            <span className="text-[#E07A5F] font-bold tracking-wider uppercase text-sm mb-2 block">See what&apos;s happening</span>
+            <h2 className="font-serif text-4xl md:text-5xl text-[#2C4C3B] mb-6">What&apos;s On at the Hall</h2>
+            <p className="text-[#1A1A1A]/70 max-w-2xl mx-auto text-lg">
+              Browse upcoming events, regular groups, and availability before you plan your visit or booking.
+            </p>
+          </div>
+
+          <div className="bg-white p-6 md:p-8 rounded-3xl border border-[#2C4C3B]/5 shadow-sm mb-10">
+            <div className="overflow-hidden rounded-2xl border border-[#2C4C3B]/10">
+              <iframe
+                title="Wollongbar Hall calendar"
+                src="https://calendar.google.com/calendar/embed?src=wollongbarhall%40gmail.com&ctz=Australia%2FSydney&mode=MONTH&showTitle=0&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+                className="w-full h-[480px] md:h-[600px]"
+                style={{ border: 0 }}
+                loading="lazy"
+              />
+            </div>
+          </div>
+
+          <div className="text-center">
+            <Link
+              href="/whats-on"
+              className="bg-[#2C4C3B] text-white px-8 py-3 rounded-full font-medium hover:bg-[#1f362a] transition-transform hover:-translate-y-1 inline-block shadow-lg"
+            >
+              View the full calendar
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Community Garden Section */}
       <section className="py-24 px-4 bg-white relative overflow-hidden">
         {/* Decorative background element */}
