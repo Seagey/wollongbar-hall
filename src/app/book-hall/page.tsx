@@ -40,6 +40,21 @@ export default function BookHallPage() {
           </p>
         </div>
 
+        {/* What's On — public hall calendar */}
+        <div className="bg-white p-6 md:p-8 rounded-3xl border border-[#2C4C3B]/5 shadow-sm mb-16">
+          <h2 className="font-serif text-3xl text-[#2C4C3B] mb-2">What&apos;s On at the Hall</h2>
+          <p className="text-[#1A1A1A]/70 mb-6 text-sm">Check current availability and upcoming events before you submit your inquiry.</p>
+          <div className="overflow-hidden rounded-2xl border border-[#2C4C3B]/10">
+            <iframe
+              title="Wollongbar Hall calendar"
+              src="https://calendar.google.com/calendar/embed?src=wollongbarhall%40gmail.com&ctz=Australia%2FSydney&mode=MONTH&showTitle=0&showPrint=0&showTabs=1&showCalendars=0&showTz=0"
+              className="w-full h-[480px] md:h-[600px]"
+              style={{ border: 0 }}
+              loading="lazy"
+            />
+          </div>
+        </div>
+
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
           
           {/* Information & Process Column */}
