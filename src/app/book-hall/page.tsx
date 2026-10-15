@@ -66,19 +66,12 @@ export default function BookHallPage() {
                 <li className="flex gap-4">
                   <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2C4C3B] text-white flex items-center justify-center font-bold">1</div>
                   <div>
-                    <h3 className="font-bold text-[#1A1A1A]">Inspect the Venue</h3>
-                    <p className="text-sm text-[#1A1A1A]/70 mt-1">Visit during Alstonville Library hours to view the space and chat with library staff.</p>
-                  </div>
-                </li>
-                <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2C4C3B] text-white flex items-center justify-center font-bold">2</div>
-                  <div>
                     <h3 className="font-bold text-[#1A1A1A]">Submit Inquiry</h3>
                     <p className="text-sm text-[#1A1A1A]/70 mt-1">Fill out the form on this page. All inquiries must go through the WCAN committee.</p>
                   </div>
                 </li>
                 <li className="flex gap-4">
-                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2C4C3B] text-white flex items-center justify-center font-bold">3</div>
+                  <div className="flex-shrink-0 w-8 h-8 rounded-full bg-[#2C4C3B] text-white flex items-center justify-center font-bold">2</div>
                   <div>
                     <h3 className="font-bold text-[#1A1A1A]">Approval</h3>
                     <p className="text-sm text-[#1A1A1A]/70 mt-1">We aim to respond within 72 hours. Final approval is subject to Council sign-off.</p>

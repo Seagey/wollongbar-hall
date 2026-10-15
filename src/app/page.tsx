@@ -110,7 +110,7 @@ export default function Home() {
               From May 5th, Ballina Shire Council will be running the Alstonville Library temporarily from the hall for the next 12 months. Because of this, bookings are limited and all parties are strictly prohibited. 
             </p>
             <p className="text-[#1A1A1A]/80 leading-relaxed font-medium text-lg relative z-10">
-              Want to see the space? You are welcome to visit during library hours to inspect the site and discuss the venue with library staff. All formal booking requests must still go through the WCAN committee online.
+              All formal booking requests must still go through the WCAN committee online.
             </p>
           </motion.div>
         </div>
