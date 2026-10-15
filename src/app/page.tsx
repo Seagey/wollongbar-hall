@@ -14,8 +14,8 @@ export default function Home() {
         {/* Background Image with Dark Gradient */}
         <div className="absolute inset-0 z-0">
           <Image 
-            src="/SiteFiles/wcg-hero-image.png" 
-            alt="Wollongbar Hall Community" 
+            src="/SiteFiles/wcan-committee-hero.jpg" 
+            alt="The WCAN committee outside Wollongbar Hall" 
             fill 
             className="object-cover object-[25%_top] lg:object-top"
             priority
